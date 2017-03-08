@@ -11,7 +11,7 @@ Via [Melpa](https://melpa.org/#/getting-started):
 Manually:
 
 1. Clone this repo somewhere
-2. Run `package-install-file` and choose the `dired-hide-dotfiles` file.
+2. Run `package-install-file` and choose the `dired-hide-dotfiles.el` file.
 
 ## Activation ##
 

@@ -48,7 +48,7 @@
 
 ;;;###autoload
 (define-minor-mode dired-hide-dotfiles-mode
-  "Toggle `dired-hide-dotfiles'"
+  "Toggle `dired-hide-dotfiles-mode'"
   :init-value nil
   :lighter " !."
   :group 'dired
