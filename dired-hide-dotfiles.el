@@ -19,10 +19,10 @@
 
 ;; Version	    : 0.1
 ;; Keywords	    : files
-;; Package-Requires : ((emacs "25.1"))
+;; Package-Requires : ((emacs "24.1"))
 ;; URL		    : https://github.com/mattiasb/.emacs.d
 ;; Doc URL	    : TBA
-;; Compatibility    : GNU Emacs: 25.x
+;; Compatibility    : GNU Emacs: 24.x
 
 ;;; Commentary:
 
