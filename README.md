@@ -9,8 +9,9 @@ Via [Melpa](https://melpa.org/#/getting-started):
 `M-x package-install dired-hide-dotfiles`
 
 Manually:
+
 1. Clone this repo somewhere
-3. Run `package-install-file` and choose the `dired-hide-dotfiles` file.
+2. Run `package-install-file` and choose the `dired-hide-dotfiles` file.
 
 ## Activation ##
 
