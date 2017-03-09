@@ -22,7 +22,6 @@
 ;; Package-Requires : ((emacs "24.1"))
 ;; URL		    : https://github.com/mattiasb/.emacs.d
 ;; Doc URL	    : TBA
-;; Compatibility    : GNU Emacs: 24.x
 
 ;;; Commentary:
 
