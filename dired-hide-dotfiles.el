@@ -1,4 +1,4 @@
-;;; dired-hide-dotfiles.el --- Hde dotfiles in dired -*- lexical-binding: t; -*-
+;;; dired-hide-dotfiles.el --- Hide dotfiles in dired -*- lexical-binding: t; -*-
 
 ;; Copyright ⓒ 2017 Mattias Bengtsson
 ;;
