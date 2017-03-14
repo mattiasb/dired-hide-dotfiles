@@ -20,7 +20,7 @@
 ;; Version	    : 0.1
 ;; Keywords	    : files
 ;; Package-Requires : ((emacs "25.1"))
-;; URL		    : https://github.com/mattiasb/.emacs.d
+;; URL		    : https://github.com/mattiasb/dired-hide-dotfiles
 ;; Doc URL	    : TBA
 
 ;;; Commentary:
