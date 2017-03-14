@@ -1,4 +1,4 @@
-;;; dired-hide-dotfiles.el --- Hde dotfiles in dired -*- lexical-binding: t; -*-
+;;; dired-hide-dotfiles.el --- Hide dotfiles in dired -*- lexical-binding: t; -*-
 
 ;; Copyright ⓒ 2017 Mattias Bengtsson
 ;;
@@ -20,7 +20,7 @@
 ;; Version	    : 0.1
 ;; Keywords	    : files
 ;; Package-Requires : ((emacs "25.1"))
-;; URL		    : https://github.com/mattiasb/.emacs.d
+;; URL		    : https://github.com/mattiasb/dired-hide-dotfiles
 ;; Doc URL	    : TBA
 
 ;;; Commentary:
