@@ -55,7 +55,6 @@
       (dired-hide-dotfiles--hide)
     (revert-buffer)))
 
-;;;###autoload
 (defun dired-hide-dotfiles--hide ()
   "Hide all dot-files in the current `dired' buffer."
   (when dired-hide-dotfiles-mode
