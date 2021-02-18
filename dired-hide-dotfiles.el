@@ -52,17 +52,16 @@
   :lighter " !."
   :group 'dired
   (if dired-hide-dotfiles-mode
-      (dired-hide-dotfiles--hide)
+      (progn
+        (add-hook 'dired-after-readin-hook 'dired-hide-dotfiles--hide)
+        (dired-hide-dotfiles--hide))
+    (remove-hook 'dired-after-readin-hook 'dired-hide-dotfiles--hide)
     (revert-buffer)))
 
 (defun dired-hide-dotfiles--hide ()
   "Hide all dot-files in the current `dired' buffer."
-  (when dired-hide-dotfiles-mode
-    (dired-mark-files-regexp "^\\.")
-    (dired-do-kill-lines)))
-
-;;;###autoload
-(add-hook 'dired-after-readin-hook 'dired-hide-dotfiles--hide)
+  (dired-mark-files-regexp "^\\.")
+  (dired-do-kill-lines))
 
 (provide 'dired-hide-dotfiles)
 ;;; dired-hide-dotfiles.el ends here
