@@ -45,6 +45,16 @@
 
 (require 'dired)
 
+(defgroup dired-hide-dotfiles nil
+  "Dired hide dotfiles."
+  :group 'dired)
+
+(defcustom dired-hide-dotfiles-verbose t
+  "When non-nil, show how many dotfiles were hidden."
+  :version "0.2"
+  :type 'boolean
+  :group 'dired-hide-dotfiles)
+
 ;;;###autoload
 (define-minor-mode dired-hide-dotfiles-mode
   "Toggle `dired-hide-dotfiles-mode'"
@@ -60,8 +70,11 @@
 
 (defun dired-hide-dotfiles--hide ()
   "Hide all dot-files in the current `dired' buffer."
-  (dired-mark-files-regexp "^\\.")
-  (dired-do-kill-lines))
+  (let ((inhibit-message t))
+    (dired-mark-files-regexp "^\\."))
+  (dired-do-kill-lines nil (if dired-hide-dotfiles-verbose
+                               "Hid %d dotfiles%s."
+                             "")))
 
 (provide 'dired-hide-dotfiles)
 ;;; dired-hide-dotfiles.el ends here
