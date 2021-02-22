@@ -73,7 +73,7 @@
   (let ((inhibit-message t))
     (dired-mark-files-regexp "^\\."))
   (dired-do-kill-lines nil (if dired-hide-dotfiles-verbose
-                               "Hid %d dotfiles%s."
+                               "Hid %d dotfile%s."
                              "")))
 
 (provide 'dired-hide-dotfiles)
