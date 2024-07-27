@@ -25,7 +25,7 @@
 
 ;;; Commentary:
 
-;; Hide dotfiles in dired.
+;; Hide dotfiles in Dired.
 ;;
 ;; To activate this mode add something like this to your init.el:
 ;;
@@ -56,7 +56,7 @@
 
 ;;;###autoload
 (define-minor-mode dired-hide-dotfiles-mode
-  "Toggle `dired-hide-dotfiles-mode'"
+  "Toggle `dired-hide-dotfiles-mode'."
   :init-value nil
   :lighter " !."
   :group 'dired
